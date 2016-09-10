@@ -1,6 +1,5 @@
 package com.arjunalabs.android.untest;
 
-import android.content.ComponentName;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -15,8 +14,6 @@ import org.robolectric.shadows.ShadowActivity;
 import org.robolectric.util.ActivityController;
 
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNull;
-import static junit.framework.Assert.assertTrue;
 import static junit.framework.TestCase.assertNotNull;
 
 /**
