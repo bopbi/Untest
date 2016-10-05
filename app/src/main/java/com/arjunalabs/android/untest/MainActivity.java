@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 10; i++) {
             Post post = new Post();
             post.setTitle("Title number "+ i);
-            post.setDescription("Description for item is number "+ i);
+            post.setDescription("Description for item is number " + i);
+            post.setUrl("http://loripsum.net/api");
             postArrayList.add(post);
         }
 

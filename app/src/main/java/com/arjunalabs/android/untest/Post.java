@@ -7,6 +7,7 @@ public class Post {
 
     private String title;
     private String description;
+    private String url;
 
     public String getTitle() {
         return title;
@@ -22,5 +23,14 @@ public class Post {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

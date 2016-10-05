@@ -54,13 +54,16 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
             descriptionTextView = (TextView) itemView.findViewById(R.id.text_description);
         }
 
-        public void bind(Post post) {
+        public void bind(final Post post) {
             titleTextView.setText(post.getTitle());
             descriptionTextView.setText(post.getDescription());
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent detailIntent = new Intent(itemView.getContext(), DetailActivity.class);
+                    detailIntent.putExtra("title", post.getTitle());
+                    detailIntent.putExtra("description", post.getDescription());
+                    detailIntent.putExtra("url", post.getUrl());
                     itemView.getContext().startActivity(detailIntent);
                 }
             });
